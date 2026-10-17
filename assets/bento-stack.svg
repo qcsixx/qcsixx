@@ -1,0 +1,180 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 230" width="100%" height="100%">
+  <defs>
+    <linearGradient id="stack-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#05070a" />
+      <stop offset="50%" stop-color="#080c14" />
+      <stop offset="100%" stop-color="#050609" />
+    </linearGradient>
+    <linearGradient id="stack-border" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.22" />
+      <stop offset="50%" stop-color="#94a3b8" stop-opacity="0.08" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.04" />
+    </linearGradient>
+
+    <!-- Pill Slot Style -->
+    <linearGradient id="slot-fill" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#141923" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#0a0d14" stop-opacity="0.9" />
+    </linearGradient>
+
+    <style><![CDATA[
+      * {
+        font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Inter", "Segoe UI", sans-serif;
+      }
+      .category-label {
+        fill: #64748b;
+        font-size: 10.5px;
+        font-weight: 700;
+        letter-spacing: 1px;
+      }
+      .pill-text {
+        fill: #f1f5f9;
+        font-size: 11.5px;
+        font-weight: 600;
+      }
+    ]]></style>
+  </defs>
+
+  <!-- Container Frame -->
+  <rect x="2" y="2" width="916" height="226" rx="16" fill="url(#stack-bg)" stroke="url(#stack-border)" stroke-width="1.2" />
+
+  <!-- ================= ROW 1: MOBILE ECOSYSTEM ================= -->
+  <g transform="translate(36, 26)">
+    <text x="0" y="22" class="category-label">MOBILE SYSTEMS</text>
+
+    <!-- Flutter -->
+    <g transform="translate(160, 0)">
+      <rect width="90" height="32" rx="16" fill="url(#slot-fill)" stroke="url(#stack-border)" stroke-width="0.8" />
+      <circle cx="18" cy="16" r="4.5" fill="#02569B" />
+      <text x="32" y="20" class="pill-text">Flutter</text>
+    </g>
+
+    <!-- Dart -->
+    <g transform="translate(260, 0)">
+      <rect width="80" height="32" rx="16" fill="url(#slot-fill)" stroke="url(#stack-border)" stroke-width="0.8" />
+      <circle cx="18" cy="16" r="4.5" fill="#0175C2" />
+      <text x="32" y="20" class="pill-text">Dart</text>
+    </g>
+
+    <!-- Android -->
+    <g transform="translate(350, 0)">
+      <rect width="130" height="32" rx="16" fill="url(#slot-fill)" stroke="url(#stack-border)" stroke-width="0.8" />
+      <circle cx="18" cy="16" r="4.5" fill="#3DDC84" />
+      <text x="32" y="20" class="pill-text">Android Studio</text>
+    </g>
+
+    <!-- Kotlin -->
+    <g transform="translate(490, 0)">
+      <rect width="86" height="32" rx="16" fill="url(#slot-fill)" stroke="url(#stack-border)" stroke-width="0.8" />
+      <circle cx="18" cy="16" r="4.5" fill="#7F52FF" />
+      <text x="32" y="20" class="pill-text">Kotlin</text>
+    </g>
+
+    <!-- Swift -->
+    <g transform="translate(586, 0)">
+      <rect width="82" height="32" rx="16" fill="url(#slot-fill)" stroke="url(#stack-border)" stroke-width="0.8" />
+      <circle cx="18" cy="16" r="4.5" fill="#F05138" />
+      <text x="32" y="20" class="pill-text">Swift</text>
+    </g>
+
+    <!-- iOS Native -->
+    <g transform="translate(678, 0)">
+      <rect width="98" height="32" rx="16" fill="url(#slot-fill)" stroke="url(#stack-border)" stroke-width="0.8" />
+      <circle cx="18" cy="16" r="4.5" fill="#A2AAAD" />
+      <text x="32" y="20" class="pill-text">iOS Native</text>
+    </g>
+  </g>
+
+  <!-- Divider 1 -->
+  <line x1="36" y1="84" x2="884" y2="84" stroke="#1e293b" stroke-width="0.8" opacity="0.4" />
+
+  <!-- ================= ROW 2: MODERN WEB ARCHITECTURE ================= -->
+  <g transform="translate(36, 98)">
+    <text x="0" y="22" class="category-label">WEB ARCHITECTURE</text>
+
+    <!-- TypeScript -->
+    <g transform="translate(160, 0)">
+      <rect width="112" height="32" rx="16" fill="url(#slot-fill)" stroke="url(#stack-border)" stroke-width="0.8" />
+      <circle cx="18" cy="16" r="4.5" fill="#3178C6" />
+      <text x="32" y="20" class="pill-text">TypeScript</text>
+    </g>
+
+    <!-- React -->
+    <g transform="translate(282, 0)">
+      <rect width="86" height="32" rx="16" fill="url(#slot-fill)" stroke="url(#stack-border)" stroke-width="0.8" />
+      <circle cx="18" cy="16" r="4.5" fill="#61DAFB" />
+      <text x="32" y="20" class="pill-text">React</text>
+    </g>
+
+    <!-- Next.js -->
+    <g transform="translate(378, 0)">
+      <rect width="92" height="32" rx="16" fill="url(#slot-fill)" stroke="url(#stack-border)" stroke-width="0.8" />
+      <circle cx="18" cy="16" r="4.5" fill="#FFFFFF" />
+      <text x="32" y="20" class="pill-text">Next.js</text>
+    </g>
+
+    <!-- Tailwind CSS -->
+    <g transform="translate(480, 0)">
+      <rect width="115" height="32" rx="16" fill="url(#slot-fill)" stroke="url(#stack-border)" stroke-width="0.8" />
+      <circle cx="18" cy="16" r="4.5" fill="#06B6D4" />
+      <text x="32" y="20" class="pill-text">TailwindCSS</text>
+    </g>
+
+    <!-- HTML5 / CSS3 -->
+    <g transform="translate(605, 0)">
+      <rect width="108" height="32" rx="16" fill="url(#slot-fill)" stroke="url(#stack-border)" stroke-width="0.8" />
+      <circle cx="18" cy="16" r="4.5" fill="#E34F26" />
+      <text x="32" y="20" class="pill-text">Modern CSS</text>
+    </g>
+  </g>
+
+  <!-- Divider 2 -->
+  <line x1="36" y1="156" x2="884" y2="156" stroke="#1e293b" stroke-width="0.8" opacity="0.4" />
+
+  <!-- ================= ROW 3: BACKEND & DATA SYSTEMS ================= -->
+  <g transform="translate(36, 170)">
+    <text x="0" y="22" class="category-label">BACKEND &amp; DATA</text>
+
+    <!-- Go -->
+    <g transform="translate(160, 0)">
+      <rect width="70" height="32" rx="16" fill="url(#slot-fill)" stroke="url(#stack-border)" stroke-width="0.8" />
+      <circle cx="18" cy="16" r="4.5" fill="#00ADD8" />
+      <text x="32" y="20" class="pill-text">Go</text>
+    </g>
+
+    <!-- Python -->
+    <g transform="translate(240, 0)">
+      <rect width="90" height="32" rx="16" fill="url(#slot-fill)" stroke="url(#stack-border)" stroke-width="0.8" />
+      <circle cx="18" cy="16" r="4.5" fill="#3776AB" />
+      <text x="32" y="20" class="pill-text">Python</text>
+    </g>
+
+    <!-- Node.js -->
+    <g transform="translate(340, 0)">
+      <rect width="96" height="32" rx="16" fill="url(#slot-fill)" stroke="url(#stack-border)" stroke-width="0.8" />
+      <circle cx="18" cy="16" r="4.5" fill="#339933" />
+      <text x="32" y="20" class="pill-text">Node.js</text>
+    </g>
+
+    <!-- PHP / Blade -->
+    <g transform="translate(446, 0)">
+      <rect width="76" height="32" rx="16" fill="url(#slot-fill)" stroke="url(#stack-border)" stroke-width="0.8" />
+      <circle cx="18" cy="16" r="4.5" fill="#777BB4" />
+      <text x="32" y="20" class="pill-text">PHP</text>
+    </g>
+
+    <!-- PostgreSQL -->
+    <g transform="translate(532, 0)">
+      <rect width="118" height="32" rx="16" fill="url(#slot-fill)" stroke="url(#stack-border)" stroke-width="0.8" />
+      <circle cx="18" cy="16" r="4.5" fill="#4169E1" />
+      <text x="32" y="20" class="pill-text">PostgreSQL</text>
+    </g>
+
+    <!-- Docker -->
+    <g transform="translate(660, 0)">
+      <rect width="94" height="32" rx="16" fill="url(#slot-fill)" stroke="url(#stack-border)" stroke-width="0.8" />
+      <circle cx="18" cy="16" r="4.5" fill="#2496ED" />
+      <text x="32" y="20" class="pill-text">Docker</text>
+    </g>
+  </g>
+</svg>
