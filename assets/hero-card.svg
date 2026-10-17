@@ -1,120 +1,81 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 270" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 250" width="100%" height="100%">
   <defs>
-    <!-- Titanium & Smoked Glass Gradients -->
-    <linearGradient id="canvas-bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#040507" />
-      <stop offset="50%" stop-color="#080a0f" />
-      <stop offset="100%" stop-color="#050608" />
+    <!-- Matte Canvas Gradient -->
+    <linearGradient id="monolith-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#040508" />
+      <stop offset="50%" stop-color="#07090f" />
+      <stop offset="100%" stop-color="#040507" />
     </linearGradient>
 
-    <!-- Apple-style 1px Border Highlight -->
-    <linearGradient id="border-highlight" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.25" />
-      <stop offset="35%" stop-color="#94a3b8" stop-opacity="0.12" />
-      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.04" />
+    <!-- Swiss 1px Titanium Border -->
+    <linearGradient id="monolith-border" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.2" />
+      <stop offset="40%" stop-color="#94a3b8" stop-opacity="0.08" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.03" />
     </linearGradient>
 
-    <!-- Glass Fill -->
-    <linearGradient id="glass-card" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.04" />
-      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.01" />
-    </linearGradient>
-
-    <!-- Titanium Monogram Gradient -->
-    <linearGradient id="titanium-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+    <!-- Pure Titanium Monogram Gradient (No Neon) -->
+    <linearGradient id="pure-titanium" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#ffffff" />
-      <stop offset="50%" stop-color="#cbd5e1" />
+      <stop offset="60%" stop-color="#cbd5e1" />
       <stop offset="100%" stop-color="#64748b" />
     </linearGradient>
 
-    <!-- Ambient Mesh Glow -->
-    <radialGradient id="ambient-glow" cx="20%" cy="30%" r="60%">
-      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.08" />
-      <stop offset="60%" stop-color="#1e293b" stop-opacity="0.03" />
-      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
-    </radialGradient>
-
     <style><![CDATA[
       * {
-        font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Inter", "Segoe UI", sans-serif;
-      }
-      @keyframes softShimmer {
-        0%, 100% { opacity: 0.05; }
-        50% { opacity: 0.12; }
-      }
-      .ambient-layer {
-        animation: softShimmer 6s ease-in-out infinite;
-      }
-      @keyframes breathe {
-        0%, 100% { opacity: 0.4; }
-        50% { opacity: 1; }
-      }
-      .live-dot {
-        animation: breathe 2.5s ease-in-out infinite;
+        font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Inter", "Segoe UI", sans-serif;
       }
     ]]></style>
   </defs>
 
-  <!-- Canvas Background -->
-  <rect width="920" height="270" rx="16" fill="url(#canvas-bg)" />
-  <rect class="ambient-layer" width="920" height="270" rx="16" fill="url(#ambient-glow)" />
+  <!-- Canvas Frame -->
+  <rect x="2" y="2" width="916" height="246" rx="16" fill="url(#monolith-bg)" stroke="url(#monolith-border)" stroke-width="1.2" />
 
-  <!-- Outer Glass Frame -->
-  <rect x="2" y="2" width="916" height="266" rx="16" fill="url(#glass-card)" stroke="url(#border-highlight)" stroke-width="1.2" />
+  <!-- ================= LEFT: PURE TITANIUM MONOGRAM ================= -->
+  <g transform="translate(48, 42)">
+    <!-- Frosted Matte Squircle -->
+    <rect width="166" height="166" rx="34" fill="#0b0d14" stroke="url(#monolith-border)" stroke-width="1.2" />
 
-  <!-- ================= LEFT: GEOMETRIC MONOGRAM SQUIRCLE ================= -->
-  <g transform="translate(48, 47)">
-    <!-- Frosted Squircle Backing -->
-    <rect width="176" height="176" rx="36" fill="#0c0e14" stroke="url(#border-highlight)" stroke-width="1.2" />
-    <rect width="176" height="176" rx="36" fill="url(#glass-card)" />
-
-    <!-- Minimalist Geometric "Q" Emblem -->
-    <circle cx="88" cy="88" r="46" fill="none" stroke="url(#titanium-grad)" stroke-width="9" stroke-linecap="round" />
-    <circle cx="88" cy="88" r="30" fill="none" stroke="#334155" stroke-width="1.5" stroke-dasharray="4 4" opacity="0.6" />
-    <path d="M 112 112 L 134 134" stroke="url(#titanium-grad)" stroke-width="9" stroke-linecap="round" />
-    <circle cx="134" cy="134" r="3" fill="#38bdf8" opacity="0.9" />
+    <!-- Pure Geometric Q Vector (Zero Neon Dots) -->
+    <circle cx="83" cy="83" r="44" fill="none" stroke="url(#pure-titanium)" stroke-width="8" stroke-linecap="round" />
+    <line x1="108" y1="108" x2="128" y2="128" stroke="url(#pure-titanium)" stroke-width="8" stroke-linecap="round" />
   </g>
 
-  <!-- ================= RIGHT: EDITORIAL TYPOGRAPHY ================= -->
-  <g transform="translate(265, 45)">
+  <!-- ================= RIGHT: SWISS EDITORIAL TYPOGRAPHY ================= -->
+  <g transform="translate(254, 40)">
 
-    <!-- Top Status Pill -->
-    <rect x="0" y="0" width="190" height="24" rx="12" fill="#0f131a" stroke="url(#border-highlight)" stroke-width="0.8" />
-    <circle class="live-dot" cx="14" cy="12" r="3.5" fill="#2dd4bf" />
-    <text x="26" y="16" fill="#94a3b8" font-size="10.5" font-weight="600" letter-spacing="1">SOFTWARE ENGINEER</text>
-
-    <!-- Primary Name Headline -->
-    <text x="0" y="66" fill="#f8fafc" font-size="34" font-weight="700" letter-spacing="-0.8">
-      Rifqi Primanda
+    <!-- Modern Friendly Greeting (Gen Z / Dev Style, Not Corporate) -->
+    <text x="0" y="22" fill="#94a3b8" font-size="14" font-weight="600" letter-spacing="0.2">
+      hey, i'm <tspan fill="#f1f5f9" font-weight="700">rifqi primanda</tspan> <tspan fill="#64748b">(@qcsixx)</tspan>
     </text>
 
-    <!-- Professional Role Subheading -->
-    <text x="0" y="96" fill="#94a3b8" font-size="15" font-weight="500" letter-spacing="-0.2">
-      Mobile Applications &amp; Scalable Web Platforms
+    <!-- Primary Punchy Value Headline -->
+    <text x="0" y="62" fill="#ffffff" font-size="28" font-weight="800" letter-spacing="-0.6">
+      Building apps &amp; modern web platforms.
     </text>
 
-    <!-- Grounded Senior Bio -->
-    <text x="0" y="130" fill="#cbd5e1" font-size="13" font-weight="400" letter-spacing="0.1">
-      <tspan x="0" dy="0">Building fast, reliable mobile applications and modern web systems.</tspan>
-      <tspan x="0" dy="20" fill="#64748b">Focused on clean architecture, fluid interaction design, and robust data flow.</tspan>
+    <!-- Natural, Senior & Human Bio -->
+    <text x="0" y="98" fill="#cbd5e1" font-size="13.5" font-weight="400" letter-spacing="0.1">
+      <tspan x="0" dy="0">Mobile &amp; web developer turning ideas into smooth, high-performance software.</tspan>
+      <tspan x="0" dy="21" fill="#64748b">Obsessed with clean architecture, fluid 60fps UI, and zero lag.</tspan>
     </text>
 
-    <!-- Core Tech Highlights (Pill Chips) -->
-    <g transform="translate(0, 180)">
-      <rect x="0" y="0" width="76" height="24" rx="12" fill="#0e121a" stroke="url(#border-highlight)" stroke-width="0.8" />
-      <text x="38" y="15" fill="#e2e8f0" font-size="11" font-weight="600" text-anchor="middle">Flutter</text>
+    <!-- Core Tech Stack Pills (Matte Minimalist) -->
+    <g transform="translate(0, 150)">
+      <rect x="0" y="0" width="76" height="24" rx="12" fill="#10141e" stroke="url(#monolith-border)" stroke-width="0.8" />
+      <text x="38" y="16" fill="#f1f5f9" font-size="11.5" font-weight="600" text-anchor="middle">Flutter</text>
 
-      <rect x="84" y="0" width="96" height="24" rx="12" fill="#0e121a" stroke="url(#border-highlight)" stroke-width="0.8" />
-      <text x="132" y="15" fill="#e2e8f0" font-size="11" font-weight="600" text-anchor="middle">TypeScript</text>
+      <rect x="84" y="0" width="98" height="24" rx="12" fill="#10141e" stroke="url(#monolith-border)" stroke-width="0.8" />
+      <text x="133" y="16" fill="#f1f5f9" font-size="11.5" font-weight="600" text-anchor="middle">TypeScript</text>
 
-      <rect x="188" y="0" width="80" height="24" rx="12" fill="#0e121a" stroke="url(#border-highlight)" stroke-width="0.8" />
-      <text x="228" y="15" fill="#e2e8f0" font-size="11" font-weight="600" text-anchor="middle">Next.js</text>
+      <rect x="190" y="0" width="80" height="24" rx="12" fill="#10141e" stroke="url(#monolith-border)" stroke-width="0.8" />
+      <text x="230" y="16" fill="#f1f5f9" font-size="11.5" font-weight="600" text-anchor="middle">Next.js</text>
 
-      <rect x="276" y="0" width="56" height="24" rx="12" fill="#0e121a" stroke="url(#border-highlight)" stroke-width="0.8" />
-      <text x="304" y="15" fill="#e2e8f0" font-size="11" font-weight="600" text-anchor="middle">Go</text>
+      <rect x="278" y="0" width="56" height="24" rx="12" fill="#10141e" stroke="url(#monolith-border)" stroke-width="0.8" />
+      <text x="306" y="16" fill="#f1f5f9" font-size="11.5" font-weight="600" text-anchor="middle">Go</text>
 
-      <rect x="340" y="0" width="98" height="24" rx="12" fill="#0e121a" stroke="url(#border-highlight)" stroke-width="0.8" />
-      <text x="389" y="15" fill="#e2e8f0" font-size="11" font-weight="600" text-anchor="middle">PostgreSQL</text>
+      <rect x="342" y="0" width="100" height="24" rx="12" fill="#10141e" stroke="url(#monolith-border)" stroke-width="0.8" />
+      <text x="392" y="16" fill="#f1f5f9" font-size="11.5" font-weight="600" text-anchor="middle">PostgreSQL</text>
     </g>
 
   </g>
