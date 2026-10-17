@@ -2,16 +2,16 @@
 
   <!-- 01. GENGAR TITANIUM GLASS BENTO -->
   <a href="https://github.com/qcsixx">
-    <img src="./assets/profile-bento.svg" alt="Rifqi Primanda // Fullstack &amp; System Artisan" width="100%" />
+    <img src="./assets/profile-card.svg" alt="Rifqi Primanda // Fullstack &amp; System Artisan" width="100%" />
   </a>
 
   <br /><br />
 
   <!-- 02. LIVE PACMAN CONTRIBUTION GRAPH (POWERED BY GITHUB ACTIONS) -->
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/qcsixx/qcsixx/output/github-contribution-grid-snake-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/qcsixx/qcsixx/output/github-contribution-grid-snake.svg" />
-    <img alt="Pacman Snake Contribution Activity" src="https://raw.githubusercontent.com/qcsixx/qcsixx/output/github-contribution-grid-snake-dark.svg" width="100%" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/qcsixx/qcsixx/output/github-contribution-grid-snake-dark.svg?v=titanium" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/qcsixx/qcsixx/output/github-contribution-grid-snake.svg?v=titanium" />
+    <img alt="Pacman Snake Contribution Activity" src="https://raw.githubusercontent.com/qcsixx/qcsixx/output/github-contribution-grid-snake-dark.svg?v=titanium" width="100%" />
   </picture>
 
   <br /><br />
