@@ -1,130 +1,116 @@
 <div align="center">
 
-  <!-- HYPRLAND TERMINAL HERO (BESPOKE ANIMATED SVG) -->
+  <!-- BESPOKE HYPRLAND / ARCH TERMINAL HERO -->
   <a href="https://github.com/qcsixx">
-    <img src="./assets/terminal-hero.svg" alt="qcsixx Arch Linux Hyprland Terminal HUD" width="100%" />
+    <img src="./assets/terminal-hero.svg" alt="qcsixx Hyprland Terminal HUD" width="100%" />
   </a>
 
-  <br />
+  <br /><br />
 
-  <!-- STATUS PILL STRIP -->
+  <!-- MINIMAL BADGES -->
   <p align="center">
-    <img src="https://img.shields.io/badge/ARCH%20LINUX-x86__64-%231793D1?style=for-the-badge&logo=arch-linux&logoColor=white" alt="Arch Linux" />
-    <img src="https://img.shields.io/badge/WAYLAND-HYPRLAND-%2300A86B?style=for-the-badge&logo=wayland&logoColor=white" alt="Hyprland" />
-    <img src="https://img.shields.io/badge/FOCUS-FULLSTACK%20%26%20MOBILE-%2338BDF8?style=for-the-badge&logo=dart&logoColor=white" alt="Mobile & Web" />
-    <img src="https://img.shields.io/badge/STATUS-OPERATIONAL-%232DD4BF?style=for-the-badge&logo=statuspage&logoColor=white" alt="Status" />
+    <img src="https://img.shields.io/badge/OS-Arch_Linux-1793D1?style=flat-square&logo=arch-linux&logoColor=white" alt="Arch Linux" />
+    <img src="https://img.shields.io/badge/WM-Hyprland_(Wayland)-00A86B?style=flat-square&logo=wayland&logoColor=white" alt="Hyprland" />
+    <img src="https://img.shields.io/badge/Focus-FullStack_%26_Mobile-38BDF8?style=flat-square&logo=dart&logoColor=white" alt="Focus" />
+    <img src="https://img.shields.io/badge/Status-Building_%26_Shipping-2DD4BF?style=flat-square&logo=statuspage&logoColor=white" alt="Status" />
   </p>
 
 </div>
 
 ---
 
-### ◈ 01 // SYSTEM TELEMETRY & IDENTITY
+### About Me
 
-```yaml
-identity:
-  operator: "Rifqi Primanda (qcsixx)"
-  role: "Full-Stack & Mobile Systems Architect"
-  environment: "Arch Linux // Hyprland Compositor // Neovim"
-  philosophy: "Minimalist by design, perfectionist by execution. Zero slop."
-  current_focus:
-    - "High-performance cross-platform mobile architectures (Flutter/Dart/Native)"
-    - "Scalable reactive web platforms (TypeScript, Next.js, Go, Rust)"
-    - "Hardened Linux workflows & ergonomic devtool engineering"
-```
+I am **Rifqi Primanda (qcsixx)**, a Full-Stack and Mobile Software Engineer based on Arch Linux and the Hyprland Wayland compositor. I specialize in building high-performance cross-platform mobile applications and scalable web platforms with clean architecture, strict type safety, and ergonomic dev tooling.
 
-> *"Operating from the terminal prompt to engineer resilient, high-speed digital ecosystems. If it lags, it's deprecated."*
+- **Mobile Development**: Crafting fluid, 60fps native and cross-platform applications with Flutter, Dart, Android, and iOS.
+- **Web & Backend Systems**: Architecting scalable microservices and reactive interfaces using TypeScript, Next.js, Go, Python, and PHP.
+- **Environment & Workflow**: Power-user of modern Linux environments, tiling window managers, Neovim, and automated CI/CD workflows.
 
 ---
 
-### ◈ 02 // COMMAND CENTER & STATUS HUD
-
-| Operational Node | Classification | Protocol & Directives | Node Status |
-| :--- | :--- | :--- | :---: |
-| **Mobile Core Engine** | Production | High-FPS Rendering, Declarative UI, Clean Architecture | `READY [99.9%]` |
-| **Distributed Backend** | Production | Microservices, REST/gRPC APIs, High Concurrency | `ACTIVE [100%]` |
-| **Modern Web Interface** | Staging | Responsive Fluid Systems, Sub-second Core Web Vitals | `DISPATCHED` |
-| **System Security & Ops** | Kernel | Containerization, CI/CD Automated Pipelines, Linux Hardening | `ENCRYPTED` |
-
----
-
-### ◈ 03 // ARCHITECTURE MATRIX & TECH ARSENAL
+### Tech Arsenal
 
 <div align="center">
 
-#### ⬡ Mobile & Client-Side Ecosystem
+#### Mobile Systems
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=flutter,dart,android,apple,kotlin,swift&theme=dark" alt="Mobile Stack" />
+  <img src="https://skillicons.dev/icons?i=flutter,dart,androidstudio,apple,kotlin,swift&theme=dark" alt="Mobile Ecosystem" />
 </p>
 
-#### ⬡ Distributed Backend & Core Logic
+#### Backend & Core Logic
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=go,rust,python,nodejs,php,postgres,redis,docker&theme=dark" alt="Backend Stack" />
+  <img src="https://skillicons.dev/icons?i=go,rust,python,nodejs,php,postgres,redis,docker&theme=dark" alt="Backend Technologies" />
 </p>
 
-#### ⬡ Modern Web Architecture
+#### Frontend & Modern Web
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=ts,js,nextjs,react,tailwind,html,css&theme=dark" alt="Web Stack" />
+  <img src="https://skillicons.dev/icons?i=ts,js,nextjs,react,tailwind,html,css&theme=dark" alt="Web Technologies" />
 </p>
 
-#### ⬡ Environment, Shell & Tooling
+#### Environment & DevTools
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=arch,linux,bash,git,github,vscode,neovim&theme=dark" alt="Tooling Stack" />
+  <img src="https://skillicons.dev/icons?i=arch,linux,bash,git,github,neovim,vscode&theme=dark" alt="Linux and Tools" />
 </p>
 
 </div>
 
 ---
 
-### ◈ 04 // THE VAULT // CLASSIFIED PROJECTS
-
-```bash
-$ vault --list-featured --status=active
-```
+### Featured Repositories
 
 <table>
   <tr>
     <td width="50%" valign="top">
-      <h4>◈ Mobile Engine Core // Cross-Platform Ecosystem</h4>
-      <p>Arsitektur aplikasi mobile performa tinggi dengan fokus pada offline-first sync, state management presisi, dan animasi UI 60fps yang fluid.</p>
+      <h3><a href="https://github.com/qcsixx/cyberlens">cyberlens</a></h3>
+      <p>High-precision digital platform and analytical tool built with modern TypeScript architecture.</p>
       <p>
-        <img src="https://img.shields.io/badge/FLUTTER-02569B?style=flat-square&logo=flutter&logoColor=white" />
-        <img src="https://img.shields.io/badge/DART-0175C2?style=flat-square&logo=dart&logoColor=white" />
-        <img src="https://img.shields.io/badge/CLEAN_ARCH-1E293B?style=flat-square&logoColor=white" />
+        <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" />
+        <img src="https://img.shields.io/badge/Modern_Web-000000?style=flat-square&logo=next.js&logoColor=white" />
       </p>
-      <a href="https://github.com/qcsixx"><b>Explore Repository ➔</b></a>
     </td>
     <td width="50%" valign="top">
-      <h4>◈ Distributed Web Platform // Scalable Infrastructure</h4>
-      <p>Platform web full-stack modern dengan arsitektur microservices performa tinggi, pipeline CI/CD otomatis, dan keamanan data tingkat lanjut.</p>
+      <h3><a href="https://github.com/qcsixx/pawsnature">pawsnature</a></h3>
+      <p>Interactive web application focused on seamless user experience, responsive layouts, and performant state management.</p>
       <p>
-        <img src="https://img.shields.io/badge/TYPESCRIPT-3178C6?style=flat-square&logo=typescript&logoColor=white" />
-        <img src="https://img.shields.io/badge/NEXT.JS-000000?style=flat-square&logo=next.js&logoColor=white" />
-        <img src="https://img.shields.io/badge/GO_OR_RUST-00ADD8?style=flat-square&logo=go&logoColor=white" />
+        <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" />
+        <img src="https://img.shields.io/badge/TailwindCSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white" />
       </p>
-      <a href="https://github.com/qcsixx"><b>Explore Repository ➔</b></a>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3><a href="https://github.com/qcsixx/labiot">labiot</a></h3>
+      <p>Integrated web system and logic core powered by Blade templates and scalable backend infrastructure.</p>
+      <p>
+        <img src="https://img.shields.io/badge/Blade-F05340?style=flat-square&logo=laravel&logoColor=white" />
+        <img src="https://img.shields.io/badge/PHP-777BB4?style=flat-square&logo=php&logoColor=white" />
+      </p>
+    </td>
+    <td width="50%" valign="top">
+      <h3><a href="https://github.com/qcsixx/HRMS">HRMS</a></h3>
+      <p>Human Resource Management System engineered with structured data models, modular components, and reliable workflows.</p>
+      <p>
+        <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" />
+        <img src="https://img.shields.io/badge/Enterprise-2563EB?style=flat-square&logoColor=white" />
+      </p>
     </td>
   </tr>
 </table>
 
 ---
 
-### ◈ 05 // CONTRIBUTION MATRIX // LIVE FEED
+### Contribution Matrix
 
 <div align="center">
-  <p><i>Automated matrix telemetry updated continuously via GitHub Actions:</i></p>
   <img src="./assets/github-contribution-grid-snake.svg" alt="GitHub Contribution Snake Grid Matrix" width="100%" />
 </div>
 
 ---
 
-### ◈ 06 // SECURE TRANSMISSIONS // TERMINAL DOCK
+### Connect & Collaborate
 
 <div align="center">
-
-```
-[ INITIATE HANDSHAKE ] ── Feel free to reach out for collaborations or architectural inquiries.
-```
 
 <a href="https://linkedin.com/in/rifqiprimanda" target="_blank">
   <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
@@ -143,11 +129,7 @@ $ vault --list-featured --status=active
 </a>
 &nbsp;
 <a href="https://qcsixx.github.io" target="_blank">
-  <img src="https://img.shields.io/badge/Web_Portfolio-0A0D12?style=for-the-badge&logo=google-chrome&logoColor=38BDF8" alt="Portfolio" />
+  <img src="https://img.shields.io/badge/Portfolio-0A0D12?style=for-the-badge&logo=google-chrome&logoColor=38BDF8" alt="Portfolio" />
 </a>
-
-<br /><br />
-
-<sub>◈ ARCH LINUX x86_64 ◈ HYPRLAND PROTOCOL ◈ ZERO RUNTIME OVERHEAD ◈</sub>
 
 </div>

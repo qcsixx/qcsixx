@@ -1,43 +1,30 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 380" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 350" width="100%" height="100%">
   <defs>
-    <!-- Background and Terminal Gradients -->
+    <!-- Dark Slate & Obsidian Gradients -->
     <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#07090e" />
-      <stop offset="50%" stop-color="#0b0f17" />
-      <stop offset="100%" stop-color="#05070a" />
+      <stop offset="0%" stop-color="#080c14" />
+      <stop offset="50%" stop-color="#0b101b" />
+      <stop offset="100%" stop-color="#06090f" />
     </linearGradient>
     <linearGradient id="border-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.6" />
-      <stop offset="50%" stop-color="#1e293b" stop-opacity="0.3" />
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.7" />
+      <stop offset="50%" stop-color="#1e293b" stop-opacity="0.4" />
       <stop offset="100%" stop-color="#2dd4bf" stop-opacity="0.7" />
     </linearGradient>
     <linearGradient id="cyan-glow" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#38bdf8" />
       <stop offset="100%" stop-color="#2dd4bf" />
     </linearGradient>
-    <linearGradient id="arch-grad" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#38bdf8" />
-      <stop offset="100%" stop-color="#0284c7" />
-    </linearGradient>
 
-    <!-- Scanline Pattern -->
+    <!-- Scanline Texture -->
     <pattern id="scanlines" width="100" height="4" patternUnits="userSpaceOnUse">
       <line x1="0" y1="0" x2="100" y2="0" stroke="#ffffff" stroke-opacity="0.015" stroke-width="1" />
     </pattern>
 
     <style><![CDATA[
-      @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700;800&display=swap');
-
       * {
-        font-family: 'JetBrains Mono', monospace, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto;
+        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
       }
-
-      /* Glow and Ambient */
-      .ambient-glow {
-        filter: drop-shadow(0 0 16px rgba(56, 189, 248, 0.15));
-      }
-
-      /* Cursor Blink Animation */
       @keyframes blink {
         0%, 49% { opacity: 1; }
         50%, 100% { opacity: 0; }
@@ -46,175 +33,135 @@
         animation: blink 0.9s infinite;
         fill: #38bdf8;
       }
-
-      /* Pulse Indicator */
       @keyframes pulse {
-        0% { opacity: 0.4; transform: scale(0.98); }
-        50% { opacity: 1; transform: scale(1.02); }
-        100% { opacity: 0.4; transform: scale(0.98); }
+        0% { opacity: 0.4; }
+        50% { opacity: 1; }
+        100% { opacity: 0.4; }
       }
       .status-dot {
         animation: pulse 2.5s infinite ease-in-out;
       }
-
-      /* Radar Sweep / Glitch shimmer */
-      @keyframes scan {
-        0% { transform: translateY(0); opacity: 0.05; }
-        50% { opacity: 0.12; }
-        100% { transform: translateY(380px); opacity: 0.05; }
-      }
-      .scanner-beam {
-        animation: scan 6s linear infinite;
-      }
-
-      /* Text Fade-in */
-      @keyframes fadeIn {
-        from { opacity: 0; transform: translateY(3px); }
-        to { opacity: 1; transform: translateY(0); }
-      }
-      .line-1 { animation: fadeIn 0.4s ease-out forwards; }
-      .line-2 { animation: fadeIn 0.7s ease-out forwards; }
-      .line-3 { animation: fadeIn 1.0s ease-out forwards; }
-      .line-4 { animation: fadeIn 1.3s ease-out forwards; }
-      .line-5 { animation: fadeIn 1.6s ease-out forwards; }
-      .line-6 { animation: fadeIn 1.9s ease-out forwards; }
     ]]></style>
   </defs>
 
   <!-- Terminal Window Background -->
-  <rect x="2" y="2" width="916" height="376" rx="12" fill="url(#bg-grad)" stroke="url(#border-grad)" stroke-width="1.5" />
-  <rect x="2" y="2" width="916" height="376" rx="12" fill="url(#scanlines)" />
+  <rect x="2" y="2" width="916" height="346" rx="10" fill="url(#bg-grad)" stroke="url(#border-grad)" stroke-width="1.2" />
+  <rect x="2" y="2" width="916" height="346" rx="10" fill="url(#scanlines)" />
 
-  <!-- Animated Scanner Beam -->
-  <rect class="scanner-beam" x="2" y="0" width="916" height="20" fill="url(#cyan-glow)" opacity="0.08" />
-
-  <!-- Window Header Bar (Hyprland / Wayland Style) -->
-  <rect x="2" y="2" width="916" height="42" rx="12" fill="#0c111a" fill-opacity="0.9" />
-  <line x1="2" y1="44" x2="918" y2="44" stroke="#1e293b" stroke-width="1" />
+  <!-- Window Header Bar (Wayland / Hyprland Style) -->
+  <rect x="2" y="2" width="916" height="38" rx="10" fill="#0d131f" />
+  <line x1="2" y1="40" x2="918" y2="40" stroke="#1e293b" stroke-width="1" />
 
   <!-- Window Controls -->
-  <circle cx="26" cy="23" r="6" fill="#ef4444" opacity="0.8" />
-  <circle cx="46" cy="23" r="6" fill="#f59e0b" opacity="0.8" />
-  <circle cx="66" cy="23" r="6" fill="#10b981" opacity="0.8" />
+  <circle cx="24" cy="21" r="5.5" fill="#ef4444" opacity="0.85" />
+  <circle cx="42" cy="21" r="5.5" fill="#f59e0b" opacity="0.85" />
+  <circle cx="60" cy="21" r="5.5" fill="#10b981" opacity="0.85" />
 
-  <!-- Window Title / Active Tab -->
-  <g transform="translate(100, 28)">
-    <text fill="#64748b" font-size="12" font-weight="600">WORKSPACE: <tspan fill="#38bdf8">[01:DEV]</tspan></text>
-  </g>
-  <g transform="translate(360, 28)">
-    <text fill="#94a3b8" font-size="12" font-weight="700" letter-spacing="0.5">qcsixx@archlinux:~ (hyprland)</text>
-  </g>
+  <!-- Title Center -->
+  <text x="460" y="25" fill="#94a3b8" font-size="12" font-weight="600" text-anchor="middle" letter-spacing="0.5">qcsixx@archlinux:~ (hyprland)</text>
 
   <!-- Live Status Chip (Right) -->
-  <g transform="translate(740, 16)">
-    <rect width="155" height="22" rx="11" fill="#032b2b" stroke="#0d9488" stroke-width="0.8" />
-    <circle class="status-dot" cx="14" cy="11" r="4" fill="#2dd4bf" />
-    <text x="26" y="15" fill="#2dd4bf" font-size="10.5" font-weight="700" letter-spacing="0.5">SYSTEM ACTIVE</text>
+  <g transform="translate(746, 11)">
+    <rect width="148" height="20" rx="10" fill="#042727" stroke="#0d9488" stroke-width="0.8" />
+    <circle class="status-dot" cx="13" cy="10" r="3.5" fill="#2dd4bf" />
+    <text x="24" y="14" fill="#2dd4bf" font-size="10" font-weight="700" letter-spacing="0.5">ONLINE // READY</text>
   </g>
 
-  <!-- MAIN TERMINAL BODY -->
-  <!-- Left Column: Arch Linux ASCII Art with Neon Gradient -->
-  <g transform="translate(32, 70)">
-    <path d="M 120 0 L 126 12 L 180 120 L 220 200 L 240 240 L 225 240 L 195 190 L 165 240 L 75 240 L 45 190 L 15 240 L 0 240 L 20 200 L 60 120 Z" 
-          fill="none" stroke="url(#arch-grad)" stroke-width="1.8" opacity="0.25" />
-    <!-- Authentic Monospaced Arch ASCII Art -->
-    <text fill="url(#cyan-glow)" font-size="12.5" font-weight="700" xml:space="preserve" opacity="0.95">
-      <tspan x="0" y="24">                   -`</tspan>
-      <tspan x="0" y="42">                  .o+`</tspan>
-      <tspan x="0" y="60">                 `ooo/</tspan>
-      <tspan x="0" y="78">                `+oooo:</tspan>
-      <tspan x="0" y="96">               `+oooooo:</tspan>
-      <tspan x="0" y="114">               -+oooooo+:</tspan>
-      <tspan x="0" y="132">             `/:-:++oooo+:</tspan>
-      <tspan x="0" y="150">            `/++++/+++++++:</tspan>
-      <tspan x="0" y="168">           `/++++++++++++++:</tspan>
-      <tspan x="0" y="186">          `/+++ooooooooooooo/`</tspan>
-      <tspan x="0" y="204">         ./ooosssso++osssssso+`</tspan>
-      <tspan x="0" y="222">        .oossssso-````/ossssss+`</tspan>
-      <tspan x="0" y="240">       -osssssso.      :ssssssso.</tspan>
-      <tspan x="0" y="258">      :osssssss/        osssso+++.</tspan>
+  <!-- ================= LEFT COLUMN: QCSIX BLOCK ASCII & SPECS ================= -->
+  <!-- Bold Graphic Monospace ASCII "QCSIX" -->
+  <g transform="translate(30, 65)">
+    <text fill="url(#cyan-glow)" font-size="13" font-weight="700" xml:space="preserve">
+      <tspan x="0" y="20">  ___   ____ ____ _____ _  __</tspan>
+      <tspan x="0" y="38"> / _ \ / ___/ ___|_   _\ \/ /</tspan>
+      <tspan x="0" y="56">| | | | |   \___ \ | |  \  / </tspan>
+      <tspan x="0" y="74">| |_| | |___ ___) || |  /  \ </tspan>
+      <tspan x="0" y="92"> \__\_\\____|____/ |_| /_/\_\</tspan>
+    </text>
+
+    <!-- Subsystem Spec Box -->
+    <rect x="0" y="125" width="280" height="95" rx="6" fill="#090e17" stroke="#1e293b" stroke-width="1" />
+    <text font-size="11.5" font-weight="600">
+      <tspan fill="#64748b" x="14" y="150">HOST</tspan>
+      <tspan fill="#38bdf8" x="80" y="150">::</tspan>
+      <tspan fill="#f1f5f9" x="98" y="150">archlinux (x86_64)</tspan>
+
+      <tspan fill="#64748b" x="14" y="172">WM</tspan>
+      <tspan fill="#38bdf8" x="80" y="172">::</tspan>
+      <tspan fill="#f1f5f9" x="98" y="172">hyprland (wayland)</tspan>
+
+      <tspan fill="#64748b" x="14" y="194">EDITOR</tspan>
+      <tspan fill="#38bdf8" x="80" y="194">::</tspan>
+      <tspan fill="#f1f5f9" x="98" y="194">neovim / linux-cli</tspan>
     </text>
   </g>
 
-  <!-- Divider Line -->
-  <line x1="305" y1="65" x2="305" y2="345" stroke="#1e293b" stroke-width="1" stroke-dasharray="4 4" />
+  <!-- Vertical Divider (Clean Dashed) -->
+  <line x1="345" y1="55" x2="345" y2="300" stroke="#1e293b" stroke-width="1" stroke-dasharray="3 3" />
 
-  <!-- Right Column: Interactive Terminal Telemetry -->
-  <g transform="translate(330, 80)">
-    <!-- Command 1 -->
-    <g class="line-1">
-      <text font-size="13" font-weight="700">
-        <tspan fill="#38bdf8">❯</tspan>
-        <tspan fill="#f1f5f9" dx="8">whoami</tspan>
-      </text>
-      <text y="22" font-size="13" font-weight="600">
-        <tspan fill="#64748b">➔</tspan>
-        <tspan fill="#e2e8f0" dx="6">Rifqi Primanda (qcsixx)</tspan>
-        <tspan fill="#2dd4bf" font-weight="700" dx="8">[Architect &amp; Systems Engineer]</tspan>
-      </text>
-    </g>
+  <!-- ================= RIGHT COLUMN: ROBUST ABSOLUTE Y TERMINAL LINES ================= -->
+  <g transform="translate(375, 65)">
+    <!-- Line 1: Command whoami -->
+    <text x="0" y="20" font-size="13" font-weight="700">
+      <tspan fill="#38bdf8">❯</tspan>
+      <tspan fill="#f1f5f9" dx="8">whoami</tspan>
+    </text>
 
-    <!-- Command 2 -->
-    <g class="line-2" transform="translate(0, 52)">
-      <text font-size="13" font-weight="700">
-        <tspan fill="#38bdf8">❯</tspan>
-        <tspan fill="#f1f5f9" dx="8">neofetch --domain mobile-and-web</tspan>
-      </text>
-    </g>
+    <!-- Line 2: Identity Output -->
+    <text x="14" y="46" font-size="12.5" font-weight="600">
+      <tspan fill="#64748b">➔</tspan>
+      <tspan fill="#f8fafc" dx="6">Rifqi Primanda (qcsixx)</tspan>
+      <tspan fill="#2dd4bf" dx="6">• Full-Stack &amp; Mobile Engineer</tspan>
+    </text>
 
-    <!-- Spec Matrix -->
-    <g class="line-3" transform="translate(14, 82)">
-      <text font-size="12.5" font-weight="600">
-        <tspan fill="#38bdf8" x="0" y="0">OS</tspan>
-        <tspan fill="#64748b" x="90" y="0">::</tspan>
-        <tspan fill="#f8fafc" x="110" y="0">Arch Linux x86_64</tspan>
+    <!-- Line 3: Command cat system.txt -->
+    <text x="0" y="86" font-size="13" font-weight="700">
+      <tspan fill="#38bdf8">❯</tspan>
+      <tspan fill="#f1f5f9" dx="8">cat profile.json</tspan>
+    </text>
 
-        <tspan fill="#38bdf8" x="0" y="22">WM</tspan>
-        <tspan fill="#64748b" x="90" y="22">::</tspan>
-        <tspan fill="#f8fafc" x="110" y="22">Hyprland (Wayland Protocol)</tspan>
+    <!-- Line 4 to 8: Clean Key-Value Profile Spec -->
+    <text font-size="12" font-weight="600">
+      <tspan fill="#38bdf8" x="14" y="112">Focus</tspan>
+      <tspan fill="#64748b" x="80" y="112">:</tspan>
+      <tspan fill="#f1f5f9" x="96" y="112">Cross-Platform Mobile Apps &amp; Scalable Web Platforms</tspan>
 
-        <tspan fill="#38bdf8" x="0" y="44">CORE</tspan>
-        <tspan fill="#64748b" x="90" y="44">::</tspan>
-        <tspan fill="#f8fafc" x="110" y="44">Full-Stack Web &amp; Mobile Ecosystems</tspan>
+      <tspan fill="#38bdf8" x="14" y="136">Stack</tspan>
+      <tspan fill="#64748b" x="80" y="136">:</tspan>
+      <tspan fill="#f1f5f9" x="96" y="136">Flutter, TypeScript, Next.js, Go, Python, PHP</tspan>
 
-        <tspan fill="#38bdf8" x="0" y="66">STACK</tspan>
-        <tspan fill="#64748b" x="90" y="66">::</tspan>
-        <tspan fill="#f8fafc" x="110" y="66">Flutter • TypeScript • Go • Rust • Next.js</tspan>
+      <tspan fill="#38bdf8" x="14" y="160">Systems</tspan>
+      <tspan fill="#64748b" x="80" y="160">:</tspan>
+      <tspan fill="#f1f5f9" x="96" y="160">Clean Architecture, Microservices, REST &amp; gRPC</tspan>
 
-        <tspan fill="#38bdf8" x="0" y="88">STATUS</tspan>
-        <tspan fill="#64748b" x="90" y="88">::</tspan>
-        <tspan fill="#2dd4bf" x="110" y="88">Crafting High-Performance Digital Artifacts</tspan>
-      </text>
-    </g>
+      <tspan fill="#38bdf8" x="14" y="184">Mission</tspan>
+      <tspan fill="#64748b" x="80" y="184">:</tspan>
+      <tspan fill="#2dd4bf" x="96" y="184">Building high-performance software with zero clutter</tspan>
+    </text>
 
-    <!-- Command 3 (Active Prompt with Cursor) -->
-    <g class="line-4" transform="translate(0, 204)">
-      <text font-size="13" font-weight="700">
-        <tspan fill="#38bdf8">❯</tspan>
-        <tspan fill="#f1f5f9" dx="8">init --vault --mode=stealth</tspan>
-        <tspan class="cursor" dx="4">█</tspan>
-      </text>
-    </g>
+    <!-- Line 9: Interactive Active Prompt -->
+    <text x="0" y="222" font-size="13" font-weight="700">
+      <tspan fill="#38bdf8">❯</tspan>
+      <tspan fill="#f1f5f9" dx="8">git status</tspan>
+      <tspan fill="#64748b" dx="8">--branch main</tspan>
+      <tspan class="cursor" dx="6">█</tspan>
+    </text>
   </g>
 
   <!-- Bottom Terminal Status Bar -->
-  <rect x="2" y="348" width="916" height="30" rx="0" fill="#090d14" />
-  <line x1="2" y1="348" x2="918" y2="348" stroke="#1e293b" stroke-width="1" />
-  <g transform="translate(20, 368)">
-    <text fill="#64748b" font-size="11" font-weight="600">
-      <tspan fill="#38bdf8">NORMAL</tspan>
-      <tspan fill="#334155" dx="10">|</tspan>
-      <tspan dx="10">main*</tspan>
-      <tspan fill="#334155" dx="10">|</tspan>
-      <tspan dx="10">utf-8</tspan>
-      <tspan fill="#334155" dx="10">|</tspan>
-      <tspan dx="10">hyprctl: 144Hz</tspan>
-    </text>
-  </g>
-  <g transform="translate(730, 368)">
-    <text fill="#64748b" font-size="11" font-weight="600">
-      <tspan fill="#2dd4bf">●</tspan>
-      <tspan dx="6">READY FOR DISPATCH</tspan>
-    </text>
-  </g>
+  <rect x="2" y="312" width="916" height="34" fill="#080c14" />
+  <line x1="2" y1="312" x2="918" y2="312" stroke="#1e293b" stroke-width="1" />
+  
+  <text x="24" y="333" fill="#64748b" font-size="11" font-weight="600">
+    <tspan fill="#38bdf8">NORMAL</tspan>
+    <tspan fill="#334155" dx="10">|</tspan>
+    <tspan dx="10">main</tspan>
+    <tspan fill="#334155" dx="10">|</tspan>
+    <tspan dx="10">utf-8</tspan>
+    <tspan fill="#334155" dx="10">|</tspan>
+    <tspan dx="10">archlinux / hyprland</tspan>
+  </text>
+
+  <text x="896" y="333" fill="#2dd4bf" font-size="11" font-weight="600" text-anchor="end">
+    ● 0 ERRORS // CLEAN BUILD
+  </text>
 </svg>
