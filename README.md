@@ -1,31 +1,28 @@
 <div align="center">
 
-  <!-- BESPOKE HYPRLAND / ARCH TERMINAL HERO -->
+  <!-- APPLE FROSTED GLASS HERO CARD -->
   <a href="https://github.com/qcsixx">
-    <img src="./assets/terminal-hero.svg" alt="qcsixx Hyprland Terminal HUD" width="100%" />
+    <img src="./assets/hero-card.svg" alt="Rifqi Primanda // Software Engineer & Systems Architect" width="100%" />
   </a>
 
   <br /><br />
 
-  <!-- MINIMAL BADGES -->
-  <p align="center">
-    <img src="https://img.shields.io/badge/OS-Arch_Linux-1793D1?style=flat-square&logo=arch-linux&logoColor=white" alt="Arch Linux" />
-    <img src="https://img.shields.io/badge/WM-Hyprland_(Wayland)-00A86B?style=flat-square&logo=wayland&logoColor=white" alt="Hyprland" />
-    <img src="https://img.shields.io/badge/Focus-FullStack_%26_Mobile-38BDF8?style=flat-square&logo=dart&logoColor=white" alt="Focus" />
-    <img src="https://img.shields.io/badge/Status-Building_%26_Shipping-2DD4BF?style=flat-square&logo=statuspage&logoColor=white" alt="Status" />
-  </p>
+  <!-- APPLE DYNAMIC ISLAND // SYSTEM PULSE -->
+  <img src="./assets/dynamic-island.svg" alt="Apple Dynamic Island // Live Telemetry" width="100%" />
+
+  <br /><br />
 
 </div>
 
 ---
 
-### About Me
+### Engineering Philosophy
 
-I am **Rifqi Primanda (qcsixx)**, a Full-Stack and Mobile Software Engineer based on Arch Linux and the Hyprland Wayland compositor. I specialize in building high-performance cross-platform mobile applications and scalable web platforms with clean architecture, strict type safety, and ergonomic dev tooling.
+I build digital software at the intersection of rigorous systems architecture and fluid product design. Specializing in high-performance cross-platform mobile ecosystems and scalable web infrastructure.
 
-- **Mobile Development**: Crafting fluid, 60fps native and cross-platform applications with Flutter, Dart, Android, and iOS.
-- **Web & Backend Systems**: Architecting scalable microservices and reactive interfaces using TypeScript, Next.js, Go, Python, and PHP.
-- **Environment & Workflow**: Power-user of modern Linux environments, tiling window managers, Neovim, and automated CI/CD workflows.
+- **Mobile Systems**: Fluid 60fps applications built with Flutter, Dart, and native Android/iOS tooling with clean, decoupled architecture.
+- **Web & Core Logic**: High-throughput distributed platforms powered by TypeScript, Next.js, Go, Python, and modern relational storage.
+- **Environment**: Driven by the speed, efficiency, and minimalism of Arch Linux, the Hyprland Wayland compositor, and Neovim.
 
 ---
 
@@ -33,24 +30,24 @@ I am **Rifqi Primanda (qcsixx)**, a Full-Stack and Mobile Software Engineer base
 
 <div align="center">
 
-#### Mobile Systems
+#### Mobile Ecosystem
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=flutter,dart,androidstudio,apple,kotlin,swift&theme=dark" alt="Mobile Ecosystem" />
+  <img src="https://skillicons.dev/icons?i=flutter,dart,androidstudio,apple,kotlin,swift&theme=dark" alt="Mobile Stack" />
 </p>
 
-#### Backend & Core Logic
+#### Backend & Core Infrastructure
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=go,rust,python,nodejs,php,postgres,redis,docker&theme=dark" alt="Backend Technologies" />
+  <img src="https://skillicons.dev/icons?i=go,rust,python,nodejs,php,postgres,redis,docker&theme=dark" alt="Backend Stack" />
 </p>
 
-#### Frontend & Modern Web
+#### Modern Web Architecture
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=ts,js,nextjs,react,tailwind,html,css&theme=dark" alt="Web Technologies" />
+  <img src="https://skillicons.dev/icons?i=ts,js,nextjs,react,tailwind,html,css&theme=dark" alt="Web Stack" />
 </p>
 
-#### Environment & DevTools
+#### Operating System & Tooling
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=arch,linux,bash,git,github,neovim,vscode&theme=dark" alt="Linux and Tools" />
+  <img src="https://skillicons.dev/icons?i=arch,linux,bash,git,github,neovim,vscode&theme=dark" alt="Tools and Environment" />
 </p>
 
 </div>
@@ -63,15 +60,15 @@ I am **Rifqi Primanda (qcsixx)**, a Full-Stack and Mobile Software Engineer base
   <tr>
     <td width="50%" valign="top">
       <h3><a href="https://github.com/qcsixx/cyberlens">cyberlens</a></h3>
-      <p>High-precision digital platform and analytical tool built with modern TypeScript architecture.</p>
+      <p>High-precision digital platform and analytical tool engineered with strict TypeScript architecture and reactive components.</p>
       <p>
         <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" />
-        <img src="https://img.shields.io/badge/Modern_Web-000000?style=flat-square&logo=next.js&logoColor=white" />
+        <img src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=next.js&logoColor=white" />
       </p>
     </td>
     <td width="50%" valign="top">
       <h3><a href="https://github.com/qcsixx/pawsnature">pawsnature</a></h3>
-      <p>Interactive web application focused on seamless user experience, responsive layouts, and performant state management.</p>
+      <p>Interactive web application centered on ergonomic user experience, responsive fluidity, and resilient state synchronization.</p>
       <p>
         <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" />
         <img src="https://img.shields.io/badge/TailwindCSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white" />
@@ -81,7 +78,7 @@ I am **Rifqi Primanda (qcsixx)**, a Full-Stack and Mobile Software Engineer base
   <tr>
     <td width="50%" valign="top">
       <h3><a href="https://github.com/qcsixx/labiot">labiot</a></h3>
-      <p>Integrated web system and logic core powered by Blade templates and scalable backend infrastructure.</p>
+      <p>Modular web ecosystem and backend logic engine built on robust Blade templates and scalable server-side patterns.</p>
       <p>
         <img src="https://img.shields.io/badge/Blade-F05340?style=flat-square&logo=laravel&logoColor=white" />
         <img src="https://img.shields.io/badge/PHP-777BB4?style=flat-square&logo=php&logoColor=white" />
@@ -89,7 +86,7 @@ I am **Rifqi Primanda (qcsixx)**, a Full-Stack and Mobile Software Engineer base
     </td>
     <td width="50%" valign="top">
       <h3><a href="https://github.com/qcsixx/HRMS">HRMS</a></h3>
-      <p>Human Resource Management System engineered with structured data models, modular components, and reliable workflows.</p>
+      <p>Enterprise human resource management platform with structured data modeling, secure authentication, and modular workflows.</p>
       <p>
         <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" />
         <img src="https://img.shields.io/badge/Enterprise-2563EB?style=flat-square&logoColor=white" />
@@ -100,15 +97,7 @@ I am **Rifqi Primanda (qcsixx)**, a Full-Stack and Mobile Software Engineer base
 
 ---
 
-### Contribution Matrix
-
-<div align="center">
-  <img src="./assets/github-contribution-grid-snake.svg" alt="GitHub Contribution Snake Grid Matrix" width="100%" />
-</div>
-
----
-
-### Connect & Collaborate
+### Direct Channels
 
 <div align="center">
 
@@ -131,5 +120,9 @@ I am **Rifqi Primanda (qcsixx)**, a Full-Stack and Mobile Software Engineer base
 <a href="https://qcsixx.github.io" target="_blank">
   <img src="https://img.shields.io/badge/Portfolio-0A0D12?style=for-the-badge&logo=google-chrome&logoColor=38BDF8" alt="Portfolio" />
 </a>
+
+<br /><br />
+
+<sub>DESIGNED WITH FROSTED GLASS &amp; TITANIUM METRICS • OPERATING ON ARCH LINUX &amp; HYPRLAND</sub>
 
 </div>
