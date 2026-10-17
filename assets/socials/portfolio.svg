@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="glass-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#141c2e" stop-opacity="0.88" />
+      <stop offset="100%" stop-color="#090e18" stop-opacity="0.96" />
+    </linearGradient>
+    <linearGradient id="border-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.25" />
+      <stop offset="40%" stop-color="#94a3b8" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.05" />
+    </linearGradient>
+    <linearGradient id="laser-beam" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0" />
+      <stop offset="50%" stop-color="#f8fafc" stop-opacity="0.85" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0" />
+    </linearGradient>
+    <style><![CDATA[
+      @keyframes laser-sweep {
+        0% { stroke-dashoffset: 230; }
+        100% { stroke-dashoffset: 0; }
+      }
+      .laser-track {
+        stroke-dasharray: 45 185;
+        animation: laser-sweep 5.5s linear infinite;
+      }
+      @keyframes icon-float {
+        0% { transform: translateY(0px) rotate(0deg); }
+        28% { transform: translateY(-3.2px) rotate(0.6deg); }
+        56% { transform: translateY(-5.2px) rotate(-0.4deg); }
+        82% { transform: translateY(-2.0px) rotate(0.2deg); }
+        100% { transform: translateY(0px) rotate(0deg); }
+      }
+      .float-node {
+        transform-origin: 32px 32px;
+        animation: icon-float 5.4s cubic-bezier(0.42, 0, 0.58, 1) infinite 1.6s;
+      }
+    ]]></style>
+  </defs>
+
+  <g class="float-node">
+    <!-- Squircle Card Background -->
+    <rect x="2" y="2" width="60" height="60" rx="18" fill="url(#glass-bg)" stroke="url(#border-grad)" stroke-width="1.2" />
+
+    <!-- Laser Shimmer Track -->
+    <rect x="2" y="2" width="60" height="60" rx="18" fill="none" stroke="url(#laser-beam)" stroke-width="1.8" class="laser-track" />
+
+    <!-- Centered Logo (32x32 within 64x64) -->
+    <g transform="translate(16, 16) scale(0.125)">
+      <circle cx="128" cy="128" r="92" stroke="#f8fafc" stroke-width="14" fill="none" opacity="0.95"/>
+<ellipse cx="128" cy="128" rx="42" ry="92" stroke="#f8fafc" stroke-width="14" fill="none" opacity="0.95"/>
+<line x1="36" y1="128" x2="220" y2="128" stroke="#f8fafc" stroke-width="14" opacity="0.95"/>
+<line x1="56" y1="80" x2="200" y2="80" stroke="#f8fafc" stroke-width="12" opacity="0.75"/>
+<line x1="56" y1="176" x2="200" y2="176" stroke="#f8fafc" stroke-width="12" opacity="0.75"/>
+    </g>
+  </g>
+</svg>
