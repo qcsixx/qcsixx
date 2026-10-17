@@ -7,7 +7,7 @@
 
   <br /><br />
 
-  <!-- 02. APPLE DYNAMIC ISLAND // SYSTEM PULSE -->
+  <!-- 02. APPLE DYNAMIC ISLAND // REALTIME STATUS -->
   <img src="./assets/dynamic-island.svg" alt="Dynamic Island Focus & Status" width="100%" />
 
   <br /><br />
@@ -17,20 +17,7 @@
 
   <br /><br />
 
-  <!-- 04. FEATURED PROJECTS BENTO GRID (SIDE-BY-SIDE) -->
-  <p align="center">
-    <a href="https://github.com/qcsixx/cyberlens">
-      <img src="./assets/project-cyberlens.svg" alt="cyberlens project" width="49%" />
-    </a>
-    &nbsp;
-    <a href="https://github.com/qcsixx/pawsnature">
-      <img src="./assets/project-pawsnature.svg" alt="pawsnature project" width="49%" />
-    </a>
-  </p>
-
-  <br />
-
-  <!-- 05. APPLE GLASS CONNECT DOCK -->
+  <!-- 04. APPLE GLASS CONNECT DOCK -->
   <img src="./assets/connect-dock.svg" alt="Connect Dock" width="100%" />
 
   <br /><br />
